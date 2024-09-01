@@ -58,21 +58,6 @@ CREATE TABLE employee (
   FOREIGN KEY (hotel_id) REFERENCES hotel(hotel_id)
 );
 
-CREATE TABLE role (
-  role_id INT PRIMARY KEY,
-  role_name VARCHAR(50) NOT NULL,
-  role_desc VARCHAR(200) NOT NULL
-);
-
-
-CREATE TABLE Shifts (
-  ShiftID INT PRIMARY KEY,
-  Shift_Date DATE NOT NULL,
-  Shift_StartTime TIME NOT NULL,
-  Shift_EndTime TIME NOT NULL,
-  Emp_id INT NOT NULL,
-  FOREIGN KEY (Emp_id) REFERENCES Employee(Emp_id),
-);
 
 CREATE TABLE RoomTypes (
   RoomType_id INT PRIMARY KEY,
